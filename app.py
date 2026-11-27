@@ -10,7 +10,7 @@ from typing import cast
 
 model = cast(Model, load_model('model.h5'))
 
-with open('Tokenizer.pkl','rb') as file:
+with open('tokenizer.pkl','rb') as file:
     tokenizer=pickle.load(file)
     
 st.title('Twitter Tweets Sentiment Analysis')
